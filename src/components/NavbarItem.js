@@ -55,7 +55,10 @@ const NavbarItem = ({ data, dark, idx, activeItem, setActiveItem }) => {
     return (
       <li className="block lg:inline-block lg:border-none w-full lg:w-auto text-center">
         <a
-          className="text-grey-3 inline-block text-white hover:opacity-80 w-full px-6 lg:px-6 py-4 lg:py-8 text-left border-b lg:border-none border-white"
+          className={`${
+            isActive ? "text-gray-200" : "text-white"
+          }
+            text-grey-3 inline-block hover:opacity-80 w-full px-6 lg:px-6 py-4 lg:py-8 text-left border-b lg:border-none border-white focus:outline-none`}
           href={data.url}
           ref={currentEl}
           onMouseOver={onHover}
@@ -84,8 +87,10 @@ const NavbarItem = ({ data, dark, idx, activeItem, setActiveItem }) => {
     >
       <button
         className={`${
-          idx === 0 ? "lg:pr-6 lg:pl-12" : "lg:px-6"
-        } px-6 text-left text-white hover:opacity-80 w-full lg:w-auto focus:outline-none py-4 lg:py-8 border-b lg:border-none border-white pointer-events-none lg:pointer-events-auto`}
+          idx === 0 ? "lg:px-6" : "lg:px-6"
+        } ${
+          isActive ? "text-gray-200" : "text-white"
+        } px-6 text-left hover:opacity-80 w-full lg:w-auto focus:outline-none py-4 lg:py-8 border-b lg:border-none border-white pointer-events-none lg:pointer-events-auto`}
       >
         {data.name}{" "}
         <span className="inline-block float-right">

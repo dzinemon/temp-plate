@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link, StaticQuery, graphql } from "gatsby";
+import { faBacon } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
@@ -23,10 +24,12 @@ export default function Footer() {
             <div className="container mx-auto pb-20 md:pb-11">
               <div className="flex flex-col md:flex-row justify-center md:justify-start -mx-4">
                 <div className="flex-shrink w-full md:w-3/12 px-4 mb-10 flex justify-center md:justify-start">
-                  <div className="w-auto flex-shrink flex flex-col items-center">
+                  <div className="w-auto flex-shrink flex flex-col">
                     <Link to={`/`} className="inline-block mb-8">
-                      <div className="w-40 h-12 bg-gray-200 flex items-center">
-                        <span className="uppercase font-bold">Logo</span>
+                      <div className="w-40 h-12 text-gray-200 flex items-center">
+                        <FontAwesomeIcon size={"2x"} icon={faBacon} /> 
+                        {" "}
+                        <span className="uppercase font-bold text-2xl ml-2">Logo</span>
                       </div>
                     </Link>
                     <div className="flex flex-row -mx-1 mb-8">
