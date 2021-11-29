@@ -1,5 +1,6 @@
 # React template with Navbar accessible via keyboard. Gatsby / Tailwind
 
+![alt text](https://github.com/dzinemon/temp-plate/blob/master/vid.gif?raw=true)
 
 ## Installing
 
@@ -32,7 +33,7 @@ npm run deploy
 
 # Optimising
 
-You can disable the default Ghost Handlebars Theme front-end by enabling the `Make this site private` flag within your Ghost settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the source of truth for SEO.
+`Make this site private` by setting `<meta name="robots" content="noindex" />` so your front-end becomes the source of truth for SEO.
 
 &nbsp;
 

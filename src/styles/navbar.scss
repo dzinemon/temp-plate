@@ -1,0 +1,26 @@
+#navbar {
+  transition: all 100ms ease-in-out;
+  background-color: transparent;
+  .nav-bg-white & {
+    @apply bg-gray-900;
+  }
+
+  @media (max-width: 1024px) {
+    @apply bg-gray-900;
+  }
+}
+
+.navbar-item {
+  color: white;
+  .nav-bg-white & {
+    color: white;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 1024px) {
+    color: white;
+  }
+}
