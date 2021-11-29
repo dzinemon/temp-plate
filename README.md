@@ -46,5 +46,3 @@ gatsby build
 # Serve a production build, locally
 gatsby serve
 ```
-
-Gatsby `develop` uses the `development` config in `.ghost.json` - while Gatsby `build` uses the `production` config.
