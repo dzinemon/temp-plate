@@ -1,5 +1,7 @@
 # React template with Navbar accessible via keyboard. Gatsby / Tailwind
 
+## [Preview](https://accessible-navbar-react.netlify.app/)
+
 ![alt text](https://github.com/dzinemon/temp-plate/blob/master/vid.gif?raw=true)
 
 ## Installing
